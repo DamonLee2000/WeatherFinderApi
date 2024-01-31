@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WeatherFinderApp.Data;
+using WeatherFinderApp.Models;
 
 namespace WeatherFinderApp.Controllers
 {
@@ -17,8 +18,16 @@ namespace WeatherFinderApp.Controllers
         }
 
         [HttpGet] // attribute specifying that this ACTION METHOD handles https GET requests.
-        public IActionResult GetWeatherData() // this method handles GET requests to retrieve weather data.
+        // parameters: ZipCode and Country name from the model WeatherInput. WeatherInput is constructed through a form found in Index.cshtml
+        public IActionResult GetWeatherData([FromQuery] WeatherInput weatherInput) // this method handles GET requests to retrieve weather data.
         {
+            // use weatherInput to get data from the form
+            var zipcode = weatherInput.Zipcode;
+            var country = weatherInput.Country;
+
+            var apiKey = "237653991af597a3b573e986887b2984";
+            var apiUrl = "http://api.openweathermap.org/geo/1.0/zip?zip={zip code},{country code}&appid={API key}";
+
             // database interaction:
             var weatherData = _context.WeatherTable.ToList(); // uses "_context" (instance of WeatherDbContext) to query database for all entries in WeatherTable. Converts results to a list.
             return Ok(weatherData); // returns HTTP 200 ok response and weather data.

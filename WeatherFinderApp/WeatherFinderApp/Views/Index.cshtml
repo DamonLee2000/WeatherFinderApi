@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Input</title>
+</head>
+<body>
+    <h1>Welcome to the Weather Input Page!</h1>
+    <p>This is where users can input the city for weather information.</p>
+
+    <!-- Your form or input elements can go here -->
+    <form method="post" action="/Weather/GetWeatherData">
+        <label for="zipcode">Zipcode:</label>
+        <input type="text" id="zipcode" name="Zipcode" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="Country" required>
+
+        <button type="submit">Get Weather Data</button>
+    </form>
+
+</body>
+</html>
