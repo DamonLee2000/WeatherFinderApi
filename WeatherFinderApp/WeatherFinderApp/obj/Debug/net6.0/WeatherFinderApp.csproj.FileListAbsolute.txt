@@ -59,3 +59,5 @@ C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinde
 C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\obj\Debug\net6.0\WeatherFinderApp.pdb
 C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\obj\Debug\net6.0\WeatherFinderApp.genruntimeconfig.cache
 C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\obj\Debug\net6.0\ref\WeatherFinderApp.dll
+C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\obj\Debug\net6.0\WeatherFinderApp.RazorAssemblyInfo.cache
+C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\obj\Debug\net6.0\WeatherFinderApp.RazorAssemblyInfo.cs
