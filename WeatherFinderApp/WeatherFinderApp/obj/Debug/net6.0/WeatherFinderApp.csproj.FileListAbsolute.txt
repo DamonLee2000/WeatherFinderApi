@@ -1,5 +1,4 @@
 C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\bin\Debug\net6.0\appsettings.json
 C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\bin\Debug\net6.0\WeatherFinderApp.exe
 C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\bin\Debug\net6.0\WeatherFinderApp.deps.json
 C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp\bin\Debug\net6.0\WeatherFinderApp.runtimeconfig.json

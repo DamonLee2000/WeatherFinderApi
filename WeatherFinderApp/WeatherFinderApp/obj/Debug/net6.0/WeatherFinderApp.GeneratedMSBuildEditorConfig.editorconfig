@@ -15,6 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\damon.lee\Source\GitHubRepo\WeatherFinder\WeatherFinderApp\WeatherFinderApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/damon.lee/Source/GitHubRepo/WeatherFinder/WeatherFinderApp/WeatherFinderApp/Views/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
+[C:/Users/damon.lee/Source/GitHubRepo/WeatherFinder/WeatherFinderApp/WeatherFinderApp/Views/Weather/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

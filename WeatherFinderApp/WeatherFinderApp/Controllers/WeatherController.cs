@@ -5,9 +5,12 @@ using WeatherFinderApp.Models;
 
 namespace WeatherFinderApp.Controllers
 {
-    [ApiController] // indicates that this class is an API controller
-    [Route("api/[controller]")] // defines the route/ "[controller]" is replaced with the name of the controller, in this case it is "Weather."
-    public class WeatherController : ControllerBase
+    //[ApiController] // indicates that this class is an API controller
+    //[Route("api/[controller]")] // defines the route/ "[controller]" is replaced with the name of the controller, in this case it is "Weather."
+
+    //[Route("[controller]")]
+    [Route("Weather")]
+    public class WeatherController : Controller//Base
     {
         // this WeatherDbContext field is only in this class and cannot be changed after object is constructed. conventionally using "_" shows it's a private field.
         private readonly WeatherDbContext _context; // will allows WeatherController to interact with the database.
@@ -17,6 +20,14 @@ namespace WeatherFinderApp.Controllers
         {
             _context = context;
         }
+
+        
+        [HttpGet] // This attribute specifies that this ACTION METHOD handles HTTP GET requests.
+        public IActionResult Index()
+        {
+            return View(); // return a view named "Index.cshtml".
+        }
+        
 
         [HttpPost] // attribute specifying that this ACTION METHOD. Use post because we post data from user input to be processed by my server, which will then interact with OpenWeatherMap API.
         // parameters: ZipCode and Country name from the model WeatherInput. WeatherInput is constructed through a form found in Index.cshtml

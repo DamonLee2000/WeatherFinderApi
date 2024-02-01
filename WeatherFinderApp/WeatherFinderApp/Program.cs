@@ -11,7 +11,18 @@ builder.Services.AddDbContext<WeatherDbContext>(options =>
 
 var app = builder.Build();
 
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Weather}/{action=Index}/{id?}"
+);
+Console.WriteLine("here");
 app.Run();
+Console.WriteLine("here2");
